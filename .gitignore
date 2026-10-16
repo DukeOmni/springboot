@@ -1,9 +1,6 @@
 HELP.md
 ## BUILD TOOLS
 ## MAVEN
-mvnw*
-pom.xml
-maven*
 target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
