@@ -1,4 +1,4 @@
 package br.learningarea.springboot.dto;
 
-record PontoReturn() implements PontoResponse{
+public record PontoReturn(String ponto) implements PontoResponse{
 }

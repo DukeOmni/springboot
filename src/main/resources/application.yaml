@@ -1,6 +1,13 @@
 spring:
+  mvc:
+    apiversion:
+      default: 1.0
+      use:
+        header: API-Version
   application:
     name: springboot
 server:
   servlet:
     context-path: /api
+
+

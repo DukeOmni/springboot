@@ -1,4 +1,4 @@
 package br.learningarea.springboot.dto;
 
-sealed interface PontoResponse permits PontoError,PontoPut,PontoReturn{
+sealed public interface PontoResponse permits PontoError,PontoPut,PontoReturn{
 }
