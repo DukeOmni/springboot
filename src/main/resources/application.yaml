@@ -1,6 +1,11 @@
 spring:
   application:
     name: springboot
+  mvc:
+    apiversion:
+      use:
+        path-segment: 0
+      default: 1
 server:
   servlet:
     context-path: /api
