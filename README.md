@@ -15,3 +15,6 @@ This is the most visible and cache-friendly option, and it’s the familiar /v1/
 3. You can add the /api/{version} prefix centrally with PathMatchConfigurer.addPathPrefix(...) instead of repeating it on every controller.
 4. With this strategy the version is effectively always present, so a default version doesn’t really apply.
 5. The cost is that a resource’s URI changes between versions, which purists argue goes against REST principles.
+
+## Problem with Path Segment
+Some purist would say is not adequate to add version in path, also the default parser recognize v1, 1 and 1.0 as 1, so the url has 3 types of reference to the same source. Adding a Custom parser solved this.
