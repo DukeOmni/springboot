@@ -8,8 +8,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/ponto")
 public class PontoController {
 
-    @GetMapping()
+    @GetMapping(version = "1.0")
     public String getPonto() {
         return "here";
+    }
+    @GetMapping(version = "2.0")
+    public String getPontoV2() {
+        return "here is v2";
     }
 }
