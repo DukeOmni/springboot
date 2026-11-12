@@ -1,6 +1,6 @@
 # Welcome to Learning Area for Springboot
 
-## Branch Versioning API with request Header
+## Branch Versioning API 
 
 ### Why?
 Once clients depend on your API, you can’t freely rename fields, change types, or remove endpoints without breaking them. Versioning lets you ship breaking changes as a new version while old clients keep working until they migrate.
@@ -8,3 +8,6 @@ Once clients depend on your API, you can’t freely rename fields, change types,
 Spring Framework 7 / Spring Boot 4 has first-class versioning. You choose one strategy (header, path segment, query param, or media type) and declare the version on each mapping:
 1. Override configureApiVersioning Bean/Edditing properties spring.mvc.apiversion (must have default/use.header: API-Version)
 2. Map handlers to versions using SpringBoot Annotation.
+
+## Media Type Parameter strategy
+Media type versioning is clean REST, but it’s harder to try out in a browser. Swagger UI and springdoc also need extra configuration to show each version separately.

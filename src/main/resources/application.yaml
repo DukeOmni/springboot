@@ -1,6 +1,12 @@
 spring:
   application:
     name: springboot
+  mvc:
+    apiversion:
+      use:
+        media-type-parameter[application/json]: version
+        default: 1.0
+
 server:
   servlet:
     context-path: /api
