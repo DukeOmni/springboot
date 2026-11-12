@@ -1,6 +1,6 @@
 # Welcome to Learning Area for Springboot
 
-## Branch Versioning API with request Header
+## Branch Versioning API
 
 ### Why?
 Once clients depend on your API, you can’t freely rename fields, change types, or remove endpoints without breaking them. Versioning lets you ship breaking changes as a new version while old clients keep working until they migrate.
